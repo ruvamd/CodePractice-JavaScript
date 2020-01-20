@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+   <script language="JavaScript" type="text/JavaScript">
+         <!--
+         function dealDealer(){
+               var card = 0
+               var total = 0
+               var cardCount = 0
+               while(total < 17){
+                  card = drawRandomCard()
+                  cardCount = cardCount + 1
+                  total = total + card
+                  document.write("Dealer drew a " + card + " Card, Total is " + total + "<br />")
+		    }
+          displayResult(cardCount,total)
+         }
+        function drawRandomCard(){
+           var maxNum = 10
+           var ranNum = generateRandomNumber(maxNum)
+           return ranNum
+         }
+         function generateRandomNumber(max){
+           var ranCard = Math.floor(Math.random() * max) + 1
+           return ranCard
+         }
+         function displayResult(cardCount,total){
+            if (total > 21) {
+             document.write("Fail,")
+         }
+            if (total <= 21){
+             document.write("<br />")
+             document.write("Result: dealer ended with: " + cardCount + " Totally: " + total)
+             
+		 }
+         }
+         //-->
+	   </script>
+</head>
+
+<body>
+   <script language="JavaScript" type="text/JavaScript">
+         <!--
+         dealDealer()
+         //-->
+   </script>
+</body>
+
+</html>

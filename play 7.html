@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+          // draw target card, 
+		  var tarCard = Math.ceil(Math.random()*10)
+		  //display it
+		   document.write("The target card is " + tarCard + "<br />")
+		  // draw random card
+			   
+		  // set card count to 0
+		  var cardCount = 0
+		  // while draw card not the same as target card
+		  
+		  while (tarCard != randomCard) {
+		  var randomCard = Math.ceil(Math.random()*10)
+		   //  display drawn card
+		   document.write("The card is " + randomCard + "<br />" )
+		  //  increment card count
+          cardCount++		  
+		  }
+		  //if card count is 7 or less
+		  if (cardCount <= 7) {
+		  //  display winning message
+		  document.write("You are win" )
+		   }		  
+		 else {
+		 //  display losing message
+		 document.write("Try again you drew " + cardCount + " times")
+		 }
+		  //  draw random card
+		  
+		  
+		  //otherwise
+		  
+		  //-->
+		</script>		
+  </body>
+</html>

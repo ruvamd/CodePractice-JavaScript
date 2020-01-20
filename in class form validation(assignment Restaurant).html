@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+		<script language="javascript" type="text/javascript">
+         <!--
+          function validate() {
+		  var emplName =  document.emplData.emplName.value
+		  var withhAllow = document.emplData.withhAllow.value
+			
+			if (emplName == "")
+			 {alert("Name cannot be left blank")
+			 document.emplData.emplName.focus()
+			 }
+			else if (withhAllow == "" || withhAllow < 0)
+			 {alert("Allowance must be 0 or greater")
+			 document.emplData.withhAllow.focus()
+			 }
+			else
+			 //Write the information to the page
+			 {document.write("Employee Name is: " + emplName + "<br />")
+		     document.write("Withholding is: " + withhAllow + "<br />")
+		     }	
+         }		  
+         //-->
+		</script>
+  </head>
+	<body>
+       <form name="emplData">
+			Employee name:  <input type="text" name="emplName">  <br />
+		    <br />
+			Withholding allowances: <input type="text" name="withhAllow"> <br />
+			<br />
+		 <input type="button" value="Submit" onClick="validate()">
+	   </form>
+	</body>
+</html>

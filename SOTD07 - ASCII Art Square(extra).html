@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+          var square = Number(prompt("Enter a square size between 3 and 30?", ""));
+          while (square < 3 || square > 30 ){
+          square = Number(prompt("from 3 to 30",""))
+          }
+          document.write("<pre>")
+          for (var row = 0; row < square; row++){
+              for(var col=0; col < square; col++){
+                if(row == 0 || row == square - 1){
+                  document.write("*")
+                }
+                  else if(col == 0 || col == square -1){
+                  document.write("*") 
+                }  else {
+                  document.write(" ")
+                  }
+                
+            }
+            document.write("<br />")
+          }
+           document.write("<br />")
+        document.write("Success")
+        //-->
+		</script>		
+  </body>
+</html>

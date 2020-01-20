@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+        <script language="javascript" type="text/javascript">
+         <!--
+         var luckyTotal = 0
+         var slypperyTotal = 0
+         
+         function draw(){
+         return Math.ceil(Math.random() * 11)
+         } 
+        function luckyTurn(){
+         luckyTotal += draw()
+        return luckyTotal
+        }
+        function slipperyTotal(){
+          slipperyTotal += draw()
+        return slipperyTotal
+        }
+        function showTurn(){
+            document.getElementById("lucky").innerHTML = "Lucky: " + luckyTurn()
+            document.getElementById("slippery").innerHTML = "Slippery: " + slipperyTurn()
+        }
+         
+         //-->
+		</script>		
+   
+  </head>
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+         showTurn()
+         //-->
+		</script>		
+  </body>
+</html>

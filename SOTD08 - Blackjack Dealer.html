@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+
+/*pseudocode
+		var card = 0
+		var total = 0
+		var cardCount = 0
+		 while(total < 17)
+		  cardCount++
+		 //card = draw a card from 1-10 (random) 
+         total += card
+
+		 if (total > 21) {
+		 document.write("Fail,")
+		 }
+		 if (total <= 21)
+		 document.write("Winner")
+
+*/
+        var card = 0
+		var total = 0
+		var cardCount = 0
+		while(total < 17){
+			document.write("Dealer drew a " + card + " Card, Total is " + total + "<br />")
+		     card = Math.floor(Math.random() * 10) + 1
+		      cardCount = cardCount + 1
+			total = total + card
+		 }
+		 		  
+		 //card = draw a card from 1-10 (random) 
+         //total += card
+
+		  if (total > 21) {
+		 document.write("Fail,")
+		 }
+		  if (total <= 21){
+		 document.write("<br />")
+		 document.write("Result: dealer ended with: " + cardCount + " Totally: " + total)
+		 }
+		 
+
+		  //-->
+		</script>		
+  </body>
+</html>

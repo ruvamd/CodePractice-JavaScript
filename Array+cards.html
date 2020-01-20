@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+        <script language="javascript" type="text/javascript">
+         <!--
+         var maxCards = 5
+		 var hand = []
+		 for (var card = 0;card <= maxCards;card++){
+		   var oneCard = Math.floor(Math.random()*10)+1
+		   hand.push(oneCard)
+		 }
+		 //Display the hand
+		 document.write("<h1>Cards deals</h1>")
+         document.write(hand)
+         
+		 //analyze for pairs
+		 hand.sort()
+		 var isWinner = false
+		 for (var cardIdx = 0;cardIdx < maxCards -1;cardIdx++){
+		    //if this card is the same as the next card
+			if (hand[cardIdx] == hand[cardIdx + 1]){
+			isWinner = true
+			}
+		 }
+		 //Announce win/loss
+		 if (isWinner == true){
+		 document.write("<h2>You won!</h2>")
+		 }else{
+		   document.write("<h2>You lost,there were no pairs</h2>")
+		 }
+         //-->
+		</script>		
+   
+  </head>
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+          
+         //-->
+		</script>		
+  </body>
+</html>

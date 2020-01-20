@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <body>
+        <script language="javascript" type="text/javascript">
+         <!--
+         //pick a random number 1 - 5 -->secret number
+         var secNum = Math.ceil(Math.random() * 5)
+		 var guessCount = 0
+		 //ask for the user guess
+		 var userGuess = Number(prompt("Guess the number between 1 and 5",""))
+		 
+		 //while secret number != user guess		
+		 while(userGuess != secNum)
+		 //ask it's wrong, ask for user guess again
+		 { guessCount++
+		  if (userGuess < secNum)
+		     {userGuess = Number(prompt("It's too low number.Try again!","")) }
+		   else
+		     {userGuess = Number(prompt("It's too high number.Try again!","")) }		  
+		 }
+		 //congratulate them
+		 alert("Hooray, you guessed it! " + guessCount + " guesses")
+         //-->
+		</script>		
+  </body>
+</html>

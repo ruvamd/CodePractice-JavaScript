@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+        <script language="JavaScript" type="text/JavaScript">
+         <!--
+         function displayArray(arrayList){
+		     document.write("<h1>Arrays</h1>")
+		        for (var arrayIndex = 0; arrayIndex < arrayList.length; arrayIndex++){
+		     document.write(arrayList[arrayIndex] + "<br />")
+		  }
+		 }
+         //-->
+		</script>		
+   
+  </head>
+  <body>
+        <script language="JavaScript" type="text/JavaScript">
+         <!--
+         var cars = []
+		 var oneCar = prompt("Enter the favorite car or DONE for finish","")
+		  while (oneCar != "DONE"){
+		   cars.push(oneCar)
+		   oneCar = prompt("Enter the favorite car or DONE for finish","")
+		  }
+		 /*
+		 cars.push("Chevy Camaro")
+		 cars.push("Mercedes-Benz")
+		 cars.push("LADA")
+		 cars.push("Honda")
+		 cars.push("Toyota")
+		 */
+		 //document.write(cars[5])
+		  
+			displayArray(cars)
+			cars.sort()
+			cars.reverse()
+			displayArray(cars)
+         //-->
+		</script>		
+  </body>
+</html>

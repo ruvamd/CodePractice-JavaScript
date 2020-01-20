@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+        <script language="JavaScript" type="text/JavaScript">
+         <!--
+         
+         function displayItems(itemList,priceList){
+             var totalPrice = 0 
+             for (var itemIndex = 0;itemIndex < itemList.length;itemIndex++){
+                  document.write(itemList[itemIndex] + ", $" + priceList[itemIndex] + "<br />")                 
+                  totalPrice += priceList[itemIndex]
+             }
+         return totalPrice
+         }
+         
+         //-->
+		</script>		
+  </head>
+  <body>
+        <script language="JavaScript" type="text/JavaScript">
+         <!--
+            document.write("<h1> Grocery List </h1>")
+            //var totalPrice += price 
+            var groceryPrices = []
+            var groceryItems = []
+            var oneGrocery = prompt("Enter grocery item or DONE for finish.","")
+            while (oneGrocery != "DONE"){
+                  groceryItems.push(oneGrocery)
+                  var price = Number(prompt("Enter the price",""))
+                  while (price == "") {
+                        if (price == "" || price <= 0){
+                              price = Number(prompt("The Price cannot be blank,0 or less.Enter the price again!",""))
+                        } 
+                  }  
+                  groceryPrices.push(price)
+                  oneGrocery = prompt("Enter grocery item or DONE for finish.","")
+            }
+      var total = displayItems(groceryItems,groceryPrices)
+      document.write("<h1>Total</h1>")
+      document.write("Total items: " + groceryItems.length + "<br />")
+      document.write("Total price: $" + total)    
+         //-->
+	  </script>		
+  </body>
+</html>

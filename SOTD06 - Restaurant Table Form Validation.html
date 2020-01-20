@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <head>
+		<script language="javascript" type="text/javascript">
+         <!--
+          function validate() {
+		  var tableNumber =  document.tableData.tableNumber.value
+		  var subTotal = document.tableData.subTotal.value
+		  var tax = 0.1
+		  var totalTax = subTotal * tax 
+		  var total = Number(subTotal) + totalTax
+		  // make sure that subtotal is a number NOT A STRING
+			if (tableNumber == "")
+			 {alert("Name cannot be left blank.")
+			  document.tableData.tableNumber.focus()
+			 }
+			else if (subTotal == "" || subTotal <= 0)
+			 {alert("Subtotal cannot be left blank,0 or below.")
+			  document.tableData.subTotal.focus()
+			 }
+			
+			else
+			 //Write the information to the page
+			 {document.write("Table number is: " + tableNumber + "<br />")
+		      document.write("Subtotal is: " + subTotal + "<br />")
+			  document.write("Total: " + total + "<br />")
+		     }	
+         }		  
+         //-->
+		</script>
+  </head>
+	<body>
+       <form name="tableData">
+			Table number:  <input type="text" name="tableNumber">  <br />
+		    <br />
+			Subtotal: <input type="text" name="subTotal"> <br />
+			<br />
+		 <input type="button" value="Submit" onClick="validate()">
+	   </form>
+	</body>
+</html>

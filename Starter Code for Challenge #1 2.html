@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8">
+  <body>
+        <script language="javascript" type="text/javascript">
+         var custName = prompt("What is your name?","")
+		 var custPhone = prompt("What is your phone number","")
+		 var subtotal = prompt("subtotal","")
+		 subtotal = Number(subtotal)
+					
+		 var taxRate = 0.1
+         var tax = subtotal * taxRate
+         var total = subtotal + tax
+				
+				document.write("Customer name:"+custName+"<br />")
+				document.write("Customer Phone:"+custPhone+"<br />")
+				
+				document.write("Subtotal = " + subtotal + "<br />")
+				document.write("Tax = " + tax + "<br />")
+				document.write("Total = " + total + "<br />")
+		 <!--
+           
+         //-->
+		</script>		
+  </body>
+</html>

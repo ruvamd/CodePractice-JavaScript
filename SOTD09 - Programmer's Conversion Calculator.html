@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Conversions</title>
+  <script language="javascript" type="text/javascript">
+   <!--
+
+   function doDecToAscii(){
+    var origValue = document.convForm.origValue.value
+     document.convForm.result.value = String.fromCharCode(origValue)
+   }
+
+   function doAsciiToDec(){
+    var origValue = document.convForm.origValue.value
+     document.convForm.result.value = origValue.charCodeAt(0)
+   }
+   
+   function doDecToBin(){
+    // read a integer from a base 10 number
+    var origValue = parseInt(document.convForm.origValue.value, 10)
+    // convert it to a base 2 number in string format
+     document.convForm.result.value = origValue.toString(2)
+   }
+   
+   function doDecToOct(){
+    var origValue = parseInt(document.convForm.origValue.value, 10)
+     document.convForm.result.value = origValue.toString(8)
+   }
+   function doOctToDec(){
+    var origValue = parseInt(document.convForm.origValue.value, 8)
+     document.convForm.result.value = origValue.toString(10)
+   }
+   function doDecToHex(){
+    var origValue = parseInt(document.convForm.origValue.value, 10)
+     document.convForm.result.value = origValue.toString(16)
+   }
+   function doBinToOct(){
+    var origValue = parseInt(document.convForm.origValue.value, 2)
+     document.convForm.result.value = origValue.toString(8)
+   }
+   function doBinToDec(){
+    var origValue = parseInt(document.convForm.origValue.value, 2)
+     document.convForm.result.value = origValue.toString(10)
+   }
+   function doOctToBin(){
+    var origValue = parseInt(document.convForm.origValue.value, 8)
+     document.convForm.result.value = origValue.toString(2)
+   }
+   function doBinToHex(){
+    var origValue = parseInt(document.convForm.origValue.value, 2)
+     document.convForm.result.value = origValue.toString(16)
+   }
+   function doHexToBin(){
+    var origValue = parseInt(document.convForm.origValue.value, 16)
+     document.convForm.result.value = origValue.toString(2)
+   }
+   function doOctToHex(){
+    var origValue = parseInt(document.convForm.origValue.value, 8)
+     document.convForm.result.value = origValue.toString(16)
+   }
+   function doHexToOct(){
+    var origValue = parseInt(document.convForm.origValue.value, 16)
+     document.convForm.result.value = origValue.toString(8)
+   }
+    //-->
+  </script>
+ </head>
+ 
+ <body>
+  <form name="convForm">
+   <h1>Conversions</h1>
+   
+   Value: <input type="text" size="5" name="origValue"><br /><br />
+  
+   <input type="button" value="Decimal to ASCII"  name="btnDecToAscii" onClick="doDecToAscii()">
+   <input type="button" value="ASCII to Decimal"  name="btnAsciiToDec" onClick="doAsciiToDec()"><br />
+   <br />
+   <input type="button" value="Decimal to Binary" name="btnDecToBin"   onClick="doDecToBin()"  >
+   <input type="button" value="Decimal to Octal" name="btnDecToOct"   onClick="doDecToOct()"  >
+   <input type="button" value="Decimal to Hexadecimal" name="btnDecToHex"   onClick="doDecToHex()"  ><br />
+   <br />
+   <input type="button" value="Binary to Decimal" name="btnBinToDec"   onClick="doBinToDec()"  >
+   <input type="button" value="Binary to Octal" name="btnBinToOct"   onClick="doBinToOct()"  >
+   <input type="button" value="Binary to Hex" name="btnBinToHex"   onClick="doBinToHex()"  ><br />
+   <br />
+   <input type="button" value="Octal to Decimal" name="btnOctToDec"   onClick="doOctToDec()"  >
+   <input type="button" value="Octal to Binary" name="btnOctToBin"   onClick="doOctToBin()"  >
+   <input type="button" value="Octal to Hex" name="btnOctToHex"   onClick="doOctToHex()"  ><br />
+   <br />  
+   <input type="button" value="Hex to Decimal" name="btnHexToDec"   onClick="doHexToDec()"  >
+   <input type="button" value="Hex to Binary" name="btnHexToBin"   onClick="doHexToBin()"  >
+   <input type="button" value="Hex to Octal" name="btnHexToOct"   onClick="doHexToOct()"  ><br />
+   <br />
+   
+   Result: <input type="text" size="10" name="result" readonly><br />
+  </form>
+ </body>
+
+</html>

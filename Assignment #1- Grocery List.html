@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html>
+  <meta charset="UTF-8">
+    <body>
+        <script language = "javascript" type="text/javascript" >
+        <!--
+        
+        document.write("<h1> List </h1>")
+        var item = prompt("Enter the item","")
+        var count = 0
+        var totalPrice = 0 
+        while (item != "DONE") {
+            var price = Number(prompt("Enter the price",""))
+            while (price == ""){
+                Number(prompt("Enter the price",""))
+            }
+            count++
+            totalPrice += price
+    
+             if (price >= 10) {
+                price += "*"
+            }
+            document.write("Item: " + item + ",Price: " + price + "<br />")  
+            item = prompt("Enter the item","")
+        }
+         document.write("<h1> Summary </h1>")
+         document.write("Shopping list consists of " + count + " items" + "<br />")
+         document.write("Total should be about " + totalPrice)
+         
+        //-->
+        </script>
+    </body>
+
+ </html>
